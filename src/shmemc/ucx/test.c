@@ -184,7 +184,7 @@ COMMS_CTX_TEST_SOME_SIZE(64, ge)
                 return n;                                               \
             }                                                           \
         }                                                               \
-        return 0;                                                       \
+        return SIZE_MAX;                                                       \
     }
 
 COMMS_CTX_TEST_ANY_SIZE(16, eq)
@@ -333,7 +333,7 @@ COMMS_CTX_TEST_SOME_VECTOR_SIZE(64, ge)
                 return n;                                               \
             }                                                           \
         }                                                               \
-        return 0;                                                       \
+        return SIZE_MAX;                                                       \
     }
 
 COMMS_CTX_TEST_ANY_VECTOR_SIZE(16, eq)
